@@ -1,0 +1,5 @@
+Some quick work on heuristics for finding channels of activity in a
+data stream, extracting just the (much smaller) bandwidth of interest,
+and then a trivial FM decoder.  Most of the channel extraction work
+was cribbed from GNURadio's translating FIR filter, and the FM decoder
+was taken from their code as well.

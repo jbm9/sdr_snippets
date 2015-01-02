@@ -1,0 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>SDR-related code Snippets</title>
+<link rel="stylesheet" type="text/css" href="project.css" />
+</head>
+
+<body>
+<div class="b">
+<h1>Software Defined Radio Code Snippets</h1>
+
+<p>I've been doing a bunch of SDR-related coding lately, and I wanted
+a place to publish my little demo/proof-of-concept snippets.  This is
+that place.</p>

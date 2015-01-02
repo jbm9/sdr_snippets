@@ -1,0 +1,32 @@
+#!/bin/bash
+# This is awful/janky.  Sorry, future self.
+
+cat index_base.html.header > index.html
+
+
+IFS=""
+for x in */; do
+    if [ -f ${x}/DESCRIPTION ]; then
+
+	echo "<h2>$x</h2>" >> index.html
+	echo "<p>" >> index.html
+	cat ${x}/DESCRIPTION >> index.html
+	echo "</p>" >> index.html
+
+	echo "<ul>" >> index.html
+
+	pushd ${x}
+
+	for y in *.ipynb; do
+	    ipython nbconvert "$y"
+ 	    yb=$(echo $y | sed -e 's/\.ipynb$//')
+
+	    echo "<li><a href='${x}/${yb}.html'>${yb}</a> (<a href='${x}/${yb}.ipynb'>ipynb</a>)</li>" >> ../index.html
+	done
+	popd
+	echo "</ul>" >> index.html
+
+    fi
+done
+
+cat index_base.html.footer >> index.html

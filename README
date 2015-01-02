@@ -1,9 +1,26 @@
-.skel
-=====
+SDR Snippets
+============
 
-This is a skeleton project.  It needs better documentation.
+This is just a way to organize a bunch of SDR-related noodling I do.
 
 Contents:
 
-web/ -- An empty website for this thing
-code/ -- An empty directory for code for this thing
+web/ -- The website
+
+There may be some form of organization someday.
+
+
+(This is an undertaker project.  Undertaker is a tool for managing the 
+open source development/publishing/release process, which pulls your 
+source code, documentation, blog posts, etc, all into a single static 
+"gitball" for release.  It can also generate static websites from 
+locally-dynamic files, allowing you to have a project blog that looks
+dynamic but is actually statically published.  This makes your content
+very friendly to archiving by tools like the wayback machine, and also
+to indexing by web crawlers.  You can also publish all your content via
+trivial static webservers, including CDNs or just local files.
+
+To republish this code as intended, please check out undertaker, at 
+  http://www.joshisanerd.com/projects/undertaker/
+  https://github.com/jbm9/undertaker
+)
