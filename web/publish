@@ -6,7 +6,7 @@ cat index_base.html.header > index.html
 
 IFS=""
 for x in */; do
-    if [ -f ${x}/DESCRIPTION ]; then
+    if [ "x${x}" != "x.git" -a -f ${x}/DESCRIPTION ]; then
 
 	echo "<h2>$x</h2>" >> index.html
 	echo "<p>" >> index.html
