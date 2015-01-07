@@ -1,0 +1,11 @@
+One thing that annoys me is having to look at GRC files inside of
+GRC itself.  I use it on a cheap-ish linux laptop, which has not the
+greatest screen resolution.  So, when it comes down to big flow graphs,
+I can't really see everything at once.</p>
+
+<p>The results here are mostly proof-of-concept: the next natural step
+is to redo a lot of this work in javascript with D3.  I've done a bit
+of D3 stuff before (I'm particularly proud of <a href="http://www.joshisanerd.com/projects/js_astrolabe">my astrolabe in javascript</a>).  But, for now, I'm out of
+hacking time for the day.  But it seems pretty straightforward to do the
+same DOM work here, and use XMLHTTPRequests for <b>actual XML</b>, which
+is mind-boggling.
